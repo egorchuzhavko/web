@@ -1,0 +1,118 @@
+<HTML>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<HEAD>
+    <TITLE> Объект Date </TITLE>
+    <script language="JavaScript">
+        /*Example 1*/
+        var now = new Date();
+        document.write("<br/>" + "<br/>" + "______Example 1______" + "<br/>" + "Time: " + now.getHours() + ":" + now.getMinutes() + "<br>");
+        document.write("Date:" + now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear());
+
+        /*Example 2*/
+        var date = new Date();
+        document.write("<br/>" + "<br/>" + "______Example 2______" + "<br/>" + "Год - " + date.getFullYear() + "<br/>");
+        document.write("Месяц - " + (date.getMonth() + 1) + "<br/>");
+        document.write("Число - " + date.getDate() + "<br/>");
+        document.write("День недели - " + date.getDay() + "<br/>");
+        document.write("Час - " + date.getHours() + "<br/>");
+        document.write("Минута - " + date.getMinutes() + "<br/>");
+        document.write("Секунда - " + date.getSeconds() + "<br/>");
+        document.write("Миллисекунда - " + date.getMilliseconds() + "<br/>");
+
+        /*Example 3*/
+        function maxim() {
+            var My_array = new Array;
+            //в переменную str записываем содержимое поля
+            //array_str
+            var str = document.array_form.array_str.value;
+            //делим строку str по разделителю «пробел»
+            //и записываем полученные подстроки в массив
+            My_array = str.split('');
+            // находим максимальный элемент
+            var max = parseInt(My_array[0]);
+            for (var i = 1; i < My_array.length - 1; i++)
+                if (parseInt(My_array[i]) > max)
+                    max = parseInt(My_array[i]);
+            alert('Максимальный элемент: ' + max);
+        }
+
+        function hiMessege() {
+            /*
+              Создайте сценарий JavaScript, выводящий на страницу при ее загрузке приветствие, связанное с временем суток, например,
+              «Доброе утро» с 7.00 до 12.00, «Добрый день» с 12.00 до 17.00,
+              «Добрый вечер» с 17.00 до 00.00, «Доброй ночи» с 00.00 до 7.00.
+            */
+            var time_ = new Date();
+            if ((time_.getHours() >= 7 && time_.getMinutes() >= 0) && time_.getHours() < 12 || (time_.getHours() == 12 && time_.getMinutes() == 0)) {
+                alert('Доброе утро!')
+            } else if ((time_.getHours() >= 12 && time_.getMinutes() >= 0) && time_.getHours() < 17 || (time_.getHours() == 17 && time_.getMinutes() == 0)) {
+                alert('Добрый День!')
+            } else if ((time_.getHours() >= 17 && time_.getMinutes() >= 0) && time_.getHours() < 0 || (time_.getHours() == 0 && time_.getMinutes() == 0)) {
+                alert('Добрый Вечер!')
+            } else {
+                alert('Доброй Ночи!')
+            }
+        }
+
+        function calculate(obj) {
+            var xstart = Number(obj.xstart.value);
+            var xend = Number(obj.xend.value);
+            var shag = Number(obj.shag.value);
+            if (xstart <= 0 | xend <= 0 | shag <= 0) {
+                alert("Все числа должны быть положительные");
+            } else {
+                if (xstart > xend) {
+                    alert("Начальное значение должно быть меньше конечного");
+                } else {
+                    if (shag > xend - xstart) {
+                        alert("Шаг не должен превышать разницы между начальным и конечным значениями!");
+                    } else {
+                        var mas = [];
+                        for (var i = xstart; i < xend; i += shag) {
+                            mas.push((Math.pow(2, i)) / ((2 * i - 3) * (Math.pow((2 * i - 2), 3))));
+                        }
+                        obj.res.value = "";
+                        for (var i = 0; i < mas.length; i++) {
+                            obj.res.value += "y = " + (String(mas[i].toFixed(2))) + "\n";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</HEAD>
+
+<BODY onload="hiMessege();">
+    <br>
+    <p>______Example 3______
+        <p>
+            <FORM name="array_form"> Введите элементы массива через пробел <br>
+                <INPUT type="text" name="array_str" size="30"><br> <br>
+                <INPUT type="button" name="but" value="Максимальный элемент" onClick="maxim();">
+            </FORM>
+            <form name="z4">
+                <h2>Расчёт значения функций</h2>
+                <br>
+                <img src="pic.png">
+                <br><br>
+                <label>Начальное значение X: </label>
+                <input type="text" name="xstart" width="100"><br><br>
+                <label>Конечное значение X: </label>
+                <input type="text" name="xend" width="100"><br><br>
+                <label>Шаг: </label>
+                <input type="text" name="shag" width="100"><br><br>
+                <input type="button" onclick="calculate(z4);" value="Рассчитать"><br>
+                <textarea name="res" cols="50" rows="25"></textarea>
+            </form>
+</BODY>
+
+</HTML>

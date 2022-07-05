@@ -1,0 +1,16 @@
+﻿.days, .calendar{
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  text-align: center;
+}
+
+.calendar div:first-child {
+  grid-column: 5;
+}
+
+
+.calendar div:hover {
+  background-color: #022a4a;
+  color: #000;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+div
+{
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(green, yellowgreen);
+	border: 1px solid black;
+	margin: 50px;
+}
+.kvadrat1:hover
+{	
+	transform: rotate(45deg) translate(60px,-60px);
+}
+.kvadrat2:hover
+{	
+	transform: rotate(45deg) translateX(80px) translateY(30px);
+}
+.kvadrat3:hover
+{
+	transform: rotate(45deg);
+}
+.kvadrat4:hover
+{
+	transform: skewX(30deg) scaleX(0.7);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .buttons{
+            text-align: center;
+        }
+        table{
+            position: absolute;
+            left: 40%;
+            width:400px;
+        }
+        th{
+            text-align: left;
+        }
+        textarea{
+            width: 400px;
+            height: 250px;
+        }
+        body{
+            background-image: url(fon.jpg);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <title>Вариант 4</title>
+</head>
+<body>
+    <h1 align="center" style="color: skyblue; margin-top: 10px; margin-bottom: 10px;text-shadow: 1px 1px 1px #000; text-align: center;">Анкета посетителя сайта</h1>
+    <form>
+        <input type="text" name="first" placeholder="Введите ваше ФИО" size="300" maxlength="550">
+        <table align="center">
+            <tbody>
+                <tr>
+                    <th>
+                        <br><br>
+                        <label>Вы являетесь:<br></label>
+                        <input type="checkbox" checked> <label>Студент</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"> <label>Школьник</label></th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"> <label>Взрослый</label></th>
+                </tr>
+                <tr>
+                    <th>
+                        <br><br><label>Ваше хобби:<br></label>
+                        <SELECT>
+                            <OPTION>Компьютеры
+                            <OPTION>Спорт
+                            <OPTION>Игры
+                            <OPTION>Животные
+                            <OPTION>Книги
+                        </SELECT>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <br><br><textarea name="textarea">Здесь введите текст</textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="buttons">
+                        <input type="submit">&nbsp;&nbsp;<input type="reset">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+fieldset{
+	border: 5px dotted #333;
+	width: 300px;
+	height: 130px;
+}
+li{
+	color: blue;
+}
+.li1
+{
+	color: blue;
+	font-style: normal;
+	font-size: 18px;
+}

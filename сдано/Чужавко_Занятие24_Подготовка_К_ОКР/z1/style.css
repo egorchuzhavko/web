@@ -1,0 +1,23 @@
+.menu-categories {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    color: white;
+    width: 800px;
+ }
+ ul{ 
+    margin: 1px;
+    padding: 5px;
+ }
+ li {
+ 
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
+ }
+ li:hover{
+    color:black;
+    background: white;
+ }

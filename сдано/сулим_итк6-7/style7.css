@@ -1,0 +1,18 @@
+img {
+    vertical-align: bottom;
+    width: 75;
+    height: 75;
+}
+.c1 {
+    font-family: Cosmic;
+    color: #aaaeb1;
+    font-size: 18px;
+}
+ button {
+    background: rgb(255, 255, 255); 
+    border: 0px; 
+    padding: 5px;
+}
+button:hover {
+	box-shadow: inset 0 0 0 2px #494d50;
+}

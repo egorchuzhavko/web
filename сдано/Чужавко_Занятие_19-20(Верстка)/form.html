@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            transition: 0.6s linear; 
+        }
+        input:hover{
+            border: 1px greenyellow solid;
+        }
+        a{
+    text-decoration: none;
+}
+.menu-categories {
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    color: white;
+    width: auto;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scr{
+    background-color: white;
+    padding: 10px;
+    border-radius:40px;
+    transition: 0.6s linear;
+}
+.scr:hover{
+    color: greenyellow;
+}
+
+.forstatic{
+    position: fixed;
+    top:0%;
+}
+
+ul{
+    margin: 0px;
+    padding: 5px;
+}
+
+.staticobj{
+    position: fixed;
+}
+
+li {
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
+}
+.pl{
+    border:0px solid rgb(255, 255, 255);
+    transition: 0.6s linear; 
+}
+
+.pl:hover{
+    border-radius:60%;
+    border:1px solid greenyellow;
+}
+
+.callback{
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius:20px;
+    border:1px solid greenyellow;
+    transition: 0.6s linear; 
+}
+.callback:hover{
+    background-color: rgb(191, 127, 221);
+}
+
+.second-menu-categories{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    color: rgb(198, 211, 15);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.firstline{
+    background-color: greenyellow;
+}
+
+table{
+    width:auto;
+    border-collapse: collapse;
+}
+
+.elpochta{
+    border-radius:20px;
+}
+
+.zagolovok{
+    margin-left: 10%;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+th{
+    color: aliceblue;
+    background-color: green;
+    width: 25%;
+}
+
+.downinfo{
+    margin-left: 40%;
+    width:70%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+}
+
+.yearstr{
+    margin-left: 40%;
+    text-align: left;
+    font-style: italic;
+    font-size: x-small;
+    color: black;
+}
+
+.downspisok{
+    margin-top: -7%;
+    margin-left: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+a{
+    color:black;
+    transition: 0.6s linear; 
+}
+a:hover{
+    color:white;
+}
+
+.psclhov{
+    color: black;
+    transition: 0.6s linear; 
+}
+
+.psclhov:hover{
+    color: white;
+}
+
+.downspisok2{
+    margin-top: -7%;
+    margin-left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+.downspisok3{
+    margin-top: -10%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+.firstinput{
+    width: 350px;
+    height:36px;
+    border-radius:20px;
+    border:0px;
+}
+
+
+    </style>
+</head>
+<body align="center">
+    <h1><font color="black">Форма регистрации</font></h1>
+    <br><br>
+    <form action="index.html">
+        <table align="center">
+                <tr>
+                    <th align="right"  style="background-color: white; color:black;">
+                        <label>Имя:</label>
+                        <input type="text" id="name" name="user_name">
+                    </th>
+                    <th style="background-color: white; color:black;">
+                        
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                        <label>e-mail:</label>
+                        <input type="text" id="e-mail" name="e-mail">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                        <label>Пароль:</label>
+                        <input type="text" id="pass" name="pass">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                    <label>Повторите пароль:</label>
+                    <input type="text" id="duppass" name="duppass">
+                </th>
+                </tr>
+                <tr align="center" style="background-color: white; color:black;">
+                    <th style="background-color: white; color:black;">
+                        <label for="mail">Пол:</label>
+                        <input type="radio" name="size" id="male" value="medium">
+                        <label for="browser">мужской</label>
+                        <input type="radio" name="size" id="female" value="medium">
+                        <label for="browser">женский</label>
+                    </th>
+                </tr>
+                <tr align="center" style="background-color: white; color:black;">
+                    <th style="background-color: white; color:black;">
+                        <label for="hobbies">Увлечения</label>
+                    </th>
+                    <th style="background-color: white; color:black;">
+
+                    </th>
+                </tr>
+                <tr align="right" style="background-color: white; color:black;">
+                    <th style="background-color: white; color:black;">
+                        <SELECT multiple>
+                            <OPTION>Компьютеры
+                            <OPTION>Спорт
+                            <OPTION>Игры
+                            <OPTION>Животные
+                            <OPTION>Книги
+                        </SELECT>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="background-color: white; color:black;">
+                        <br><label for="comment">Ваши пожелания</label>
+                        <textarea name="comment" id="1"></textarea><br>
+                    </th>
+                    <th style="background-color: white; color:black;">
+
+                    </th>
+                </tr>
+                <tr>
+                    <th style="background-color: white; color:black;">
+                        <label for="accept"><br>С уловиями регистрации <br>ознакомлен</label>
+                        <input type="checkbox">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                        <button><font color=black>Отправить</font></a></button>
+                        <button type="reset">Очистить</button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <div style="position: absolute; bottom: 0%;">
+            <table>
+                <tbody>
+                    <tr>
+                        <th colspan="4" class="firstline" style="padding-top: 10px; padding-bottom: 10px;">
+                            <input type="text" placeholder="Эл. почта" class="firstinput">
+                            <i class="zmdi zmdi-search" style="margin-left:-35px; color:black;"></i>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="center">
+                            <h3 class="zagolovok">PRESENTSTUDIO</h3><br>
+                            <p class="downinfo">
+                                ИП Стринатко Алеся Валерьевна (УНП 791158843). Свид. о регистрации №791158843 выдано 05.12.2018г. Администрацией Ленинского района г.Бобруйска. Юр.адрес: 213817 г.Бобруйск, ул.Ковзана, 56-95. Дата регистрации Интернет-магазина в Торговом реестре РБ 14 декабря 2018г. № 435769 Адрес: г.Минск, ул.Раковская, 12а Режим работы: с 10.00 до 18.00 +375 (44) 722-23-58 presentstudio@mail.ru
+                            </p>
+                            <br><br>
+                            <p>
+                                <div class="yearstr">©2018-2022. Все права защищены</div>
+                            </p>
+                        </th>
+                        <th style="width:15%; text-align: left;">
+                            <ul class="downspisok">
+                                <li>
+                                    <a href="#"><font color=white size=2>О нас</font></a>
+                                </li>
+                                <li>
+                                    <a href="#">О магазине</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика возврата</a>
+                                </li>
+                            </ul>
+                        </th>
+                        <th style="width:15%; text-align: left;">
+                            <ul class="downspisok2">
+                                <li>
+                                    <a href="#"><font color=white size=2>Помощь</font></a>
+                                </li>
+                                <li>
+                                    <a href="#">Карта сайта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Где купить?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Как купить дешевле?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Как может выглядеть мой подарок?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Приятности о нас</a>
+                                </li>
+                            </ul>
+                        </th>
+                        <th style="text-align: left;">
+                            <ul class="downspisok3">
+                                <li>
+                                    <a href="#"><font color=white size=2>Мы в сети</font></a>
+                                </li>
+                                <li>
+                                    <div class="psclhov">
+                                        <i class='fa fa-vk'></i>&nbsp;&nbsp;<a href="#">Вконтакте</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="psclhov">
+                                        <i class='fa fa-instagram'></i>&nbsp;&nbsp;<a href="#">Instagram</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="psclhov">
+                                        <i class="fa fa-facebook"></i><a href="#">&nbsp;&nbsp;Facebook</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="psclhov">
+                                        <i style="font-size:12px;" class="fa">&#xf16a;</i><a href="#">&nbsp;&nbsp;Youtube</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>

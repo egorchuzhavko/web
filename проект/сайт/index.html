@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="indexcss.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>Сайт курьерской доставки</title>
+</head>
+
+<body>
+    <a id="top"></a>
+    <a style="position: fixed; bottom:60px;right:70px; background-color: white; border: 2px solid #d25c19; border-radius: 5px;" href="#top"><span style="margin: 5px;">Наверх</span></a>
+    <div>
+        <!--Шапка сайта-->
+        <table style="width: 70%; margin:auto; padding-top: 15px; height: 65px;">
+            <th style="height: 50px;">
+                <span>
+                    <a href="#onas" class="podch">О нас</a>
+                    <a href="#uslugi" class="podch" style="margin-left: 3%;">Услуги</a>
+                    <a href="#tarifs" class="podch" style="margin-left: 3%;">Тарифы</a>
+                    <a href="#contactus" class="podch" style="margin-left: 3%;">Связаться с нами</a>
+                </span>
+                <span style="padding-left: 35%;"></span>
+                <span>
+                    <input type="button" value="Вызвать курьера" class="send" style="font-size: 15px;" onclick="location.href='#zakazatkourier';">
+                </a>
+                <input type="button" value="Войти" class="send" style="font-size: 15px;" onclick="openForm();">
+                </span>
+            </th>
+        </table>
+    </div>
+    <div style="margin-top: 200px; ">
+        <!--Название и слоган-->
+        <img src="imgs/hero.png" style="position: absolute; right:215px;top:230px; height: 400px;">
+        <span class="headname">Курьерская доставка</span><br>
+        <span style="margin-left: 250px;font-family: 'Montserrat', Arial, sans-serif; font-size: 75px;">по Минску!</span><br>
+        <span class="slogan">Мы доставим ваш груз в нужный срок.</span>
+    </div>
+    <div class="form-popup" id="myForm">
+        <!--Панель перехода на другие страницы-->
+        <form class="form-container">
+            <input type="button" value="Авторизоваться" class="send" onclick="window.open('avtoriz.html','_self',false);">
+            <input type="button" value="Зарегистрироваться" class="send" onclick="window.open('reg.html','_self',false);">
+            <input type="button" value="Закрыть" class="send" onclick="closeForm();">
+        </form>
+    </div>
+    <a name="onas"></a>
+    <div>
+        <!--Раздел О нас-->
+        <div class="AboutUsStart">
+            <h3>О нас</h3>
+        </div>
+        <div class="AboutInfo">
+            <p>Как часто вы сталкиваетесь с необходимостью перевести вещи из одной точки города в другую? Одно дело, когда вы можете потратить время на перевозку, но другое дело, когда у вас нет времени на это, но вам нужно перевезти какие то необходимые
+                вещи.
+            </p>
+            <p>Мы представляем услуги по курьерской доставке по Минску в пределах МКАД. Наше преимущество над нашими соперниками по бизнесу состоит в том, что при заказе нашей услуги наш курьер моментально приезжает за товаром. Мы берём полную отвественность
+                за товар, который мы перевозим из пункта А в пункт Б. Мы оформляем документ, как доказательство перевозки, который требует подписей получателя и отправителя. При желании курьера мы может отправить данный документ по почте. Также у нас
+                возможно несколько способов оплаты:</p>
+            <ul>
+                <li>
+                    Картой
+                </li>
+                <Li>
+                    Наличными
+                </Li>
+                <li>
+                    В рассрочку
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a name="uslugi"></a>
+    <div class="uslg">
+        <!--Раздел услуги-->
+        <div style="font-size: x-large;">
+            <h3>Наши услуги отправки</h3>
+        </div>
+        <table style="width: 90%; padding-right: 10%;">
+            <td>
+                <th class="tdstylefeatures">
+                    <div class="features">
+                        <i class="zmdi zmdi-email"></i>
+                        <br>
+                        <span style="font-size: 25px;">Почтой</span>
+                    </div>
+                </th>
+            </td>
+            <td>
+                <th class="tdstylefeatures">
+                    <div class="features">
+                        <i class="zmdi zmdi-walk "></i>
+                        <br>
+                        <span style="font-size: 25px;">Курьером</span>
+                    </div>
+                </th>
+            </td>
+            <td>
+                <th class="tdstylefeatures">
+                    <span class="features">
+                        <i class="zmdi zmdi-run "></i>
+                        <br>
+                        <span style="font-size: 25px;">Срочно курьером</span>
+                    </span>
+                </th>
+            </td>
+        </table>
+    </div>
+    <a name="tarifs"></a>
+    <div class="cu">
+        <!--Раздел тарифы-->
+        <div style="font-size: x-large; margin-left: 250px;">
+            <h3>Тарифы</h3>
+        </div>
+        <table style="width: 50%; margin:auto;" class="tarifs">
+            <tr class="tars">
+                <td>
+                    <span style="margin-left: 40px;">Отправка почтой</span>
+                </td>
+                <td>
+                    <span>Цена: 30 рублей</span>
+                </td>
+            </tr>
+            <tr class="tars">
+                <td>
+                    <span style="margin-left: 40px;">Отправка курьером в пределах МКАД</span>
+                </td>
+                <td>
+                    <span>Цена: 15 рублей</span>
+                </td>
+            </tr>
+            <tr class="tars">
+                <td>
+                    <span style="margin-left: 40px;">Отправка курьером за пределами МКАД</span>
+                </td>
+                <td>
+                    <span>Цена: 50 рублей</span>
+                </td>
+            </tr>
+            <tr class="tars">
+                <td>
+                    <span style="margin-left: 40px;">Срочная отправка курьером в пределах МКАД</span>
+                </td>
+                <td>
+                    <span>Цена: 40 рублей</span>
+                </td>
+            </tr>
+            <tr class="tars">
+                <td>
+                    <span style="margin-left: 40px;">Срочная отправка курьером за пределами МКАД</span>
+                </td>
+                <td>
+                    <span>Цена: 100 рублей</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <a name="contactus"></a>
+    <div class="cu">
+        <!--Форма обратной связи-->
+        <div style="font-size: x-large; margin-left: 250px;">
+            <h3>Связаться с нами</h3>
+        </div>
+        <table style="width: 80%; margin:auto;">
+            <th>
+                <td style="text-align:right;">
+                    <img src="imgs/callback.png">
+                </td>
+                <td>
+                    <form name="contus">
+                        <input type="text" placeholder="Ваш email" name="email" size="50" onfocus="this.value=''" style="background-color:transparent; border-color: #F95C19; backdrop-filter: blur(4px);"><br><br>
+                        <textarea name="message" cols="50" rows="10" onfocus="this.value=''" style="background-color:transparent; resize: none;  border-color: #F95C19; backdrop-filter: blur(4px);">Ваш текст</textarea><br><br>
+                        <input type="button" value="Отправить" class="send" onclick="makealerofcontactus(contus);">
+                    </form>
+                </td>
+            </th>
+        </table>
+    </div>
+    <a name="zakazatkourier"></a>
+    <div class="cu">
+        <!--Форма вызова курьера-->
+        <div style="font-size: x-large; margin-left: 250px;">
+            <h3>Вызвать курьера</h3>
+        </div>
+        <table style="width: 40%; margin:auto;">
+            <th>
+                <form name="makeorder">
+                    <td>
+                        <input type="text" placeholder="Ваше имя" name="nickname" size="50" onfocus="this.value=''" style="background-color:transparent; border-color: #F95C19; backdrop-filter: blur(4px);"><br><br>
+                        <input type="text" placeholder="Ваш email" name="email" size="50" onfocus="this.value=''" style="background-color:transparent; border-color: #F95C19; backdrop-filter: blur(4px);"><br><br>
+                        <input type="text" placeholder="Ваш номер телефона" name="phone" size="50" onfocus="this.value=''" style="background-color:transparent; border-color: #F95C19; backdrop-filter: blur(4px);"><br><br>
+                        <textarea name="message" cols="50" rows="10" onfocus="this.value=''" style="background-color:transparent;  border-color: #F95C19; backdrop-filter: blur(4px); resize: none;">Комментарии</textarea><br><br>
+                    </td>
+                    <td>
+                        <input type="button" value="Заказать курьера" onclick="mo(makeorder)" class="send">
+                    </td>
+                </form>
+            </th>
+        </table>
+    </div>
+    <div>
+        <!--Подвал сайта-->
+        <table style="background-color: #2f2e41; height:55px; width: 100%;">
+            <td>
+                <th>
+                    <span class="vpz ">Все права защищены © Чужавко Егор, 2022</span>
+                    <span style="padding-left: 60%; "></span>
+                    <span><a href="https://kbp.by/ " target="_blank " class="kbp">КБиП</a></span>
+                </th>
+            </td>
+        </table>
+    </div>
+</body>
+
+</html>

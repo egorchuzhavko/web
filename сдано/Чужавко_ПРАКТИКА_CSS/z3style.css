@@ -1,0 +1,54 @@
+.menu-categories {
+   background: linear-gradient(to bottom right, purple, yellow);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 40px;
+   color: white;
+   width: 99%;
+ }
+ ul{
+    margin: 1px;
+    padding: 5px;
+ }
+
+ ul::before{
+    color: black;
+    content: "Задание№3";
+    text-indent: -945px;
+    margin: 23px;
+    position: absolute;
+    top: 0px;
+    font-size:large;
+    font-weight: bold;
+}
+
+ li {
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
+ }
+ li:hover{
+    color:black;
+    font-family: cursive;
+    background: rgb(69, 202, 16);
+    border-style:groove;
+    font-size: large;
+ }
+ li::selection{
+    color:greenyellow;
+    background: green;
+ }
+
+ .linkline{
+    color:gray;
+    font-size: small;
+ }
+
+ h1{
+     font-weight: normal;
+ }
+
+ body{
+     background-color: rgb(228, 243, 22);
+ }

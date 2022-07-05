@@ -1,0 +1,29 @@
+p{
+    color:red;
+    text-align:justify;
+}
+h1{
+    color:green;
+    text-align: center;
+}
+h2{
+    color:aqua;
+    width: 300px;
+    text-align: right;
+}
+h3{
+    color:orange;
+
+}
+table{
+    width: 400px;
+    height: 200px;
+}
+td{
+    align-content:center;
+    font-weight: bold;
+}
+th{
+    align-content: flex-start;   
+    font-weight: lighter;
+}

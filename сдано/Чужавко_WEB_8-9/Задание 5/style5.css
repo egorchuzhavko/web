@@ -1,0 +1,18 @@
+#input_1:focus{
+    color: green;
+    outline: none;
+    border-color: green;
+    box-shadow: 1px 1px 2px 0 green;
+}
+#input_2:focus{
+    color: orange;
+    outline: none;
+    border-color: orange;
+    box-shadow: 1px 1px 2px 0 orange;
+}
+#input_3:focus{
+    color: black;
+    outline: none;
+    border-color: black;
+    box-shadow: 1px 1px 2px 0 black;
+}

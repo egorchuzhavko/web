@@ -1,0 +1,29 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Пример 7</TITLE>
+    <SCRIPT Language="JavaScript">
+        var msg = " Чужавко Егор ";
+        var id;
+
+        function scrollMsg() {
+            document.scrollerForm.welcomeMsg.value = msg;
+            msg = msg.substring(1, msg.length) + msg.substring(0, 1);
+            id = setTimeout("scrollMsg()", 150);
+        }
+
+        function stopMsg() {
+            clearTimeout(id);
+        }
+    </SCRIPT>
+</HEAD>
+
+<BODY ONLOAD="scrollMsg()">
+    <FORM NAME="scrollerForm">
+        <INPUT TYPE="text" NAME="welcomeMsg" VALUE="" size=10><br>
+        <input type="button" name="go" value="Пуск" onClick="scrollMsg()">&amp;&nbsp;&amp;&nbsp;
+        <input type="button" name="stop" value="Стоп" onClick="stopMsg()">
+    </FORM>
+</BODY>
+
+</HTML>

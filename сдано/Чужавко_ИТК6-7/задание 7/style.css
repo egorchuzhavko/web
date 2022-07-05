@@ -1,0 +1,13 @@
+.menu{
+    position: absolute;
+    margin: 30 auto;
+    
+}
+button{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(71, 69, 69);
+}
+button:hover{
+    color: rgb(224, 105, 7);
+}

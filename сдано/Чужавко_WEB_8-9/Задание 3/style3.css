@@ -1,0 +1,10 @@
+::selection {
+    background: green;
+    color: #fff; 
+   }
+body{
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    text-align: justify;
+}

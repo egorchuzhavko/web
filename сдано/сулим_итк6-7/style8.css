@@ -1,0 +1,28 @@
+﻿.menu-categories {
+   background-color: orange;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;;
+    height: 40px;
+    color: white;
+
+}
+
+a {
+
+   text-decoration: underline;
+       color:  white;
+    display: inline-block;
+}
+ul{
+
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
+}
+li {
+
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
+}

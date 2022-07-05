@@ -1,0 +1,27 @@
+body{
+    font-family: cursive;
+    margin: auto;
+    text-align: justify;
+    display: block;
+    background-image: url(fon.jpg);
+}
+
+ol{
+    position: absolute;
+    left: 35%;
+    top:15%
+}
+
+li{
+    font-size: large;
+    color: rgb(255, 0, 0);
+}
+
+li:hover{
+    font-size: xx-large;
+}
+
+li::selection{
+    color: aliceblue;
+    background-color: black;
+}

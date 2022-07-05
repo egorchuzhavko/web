@@ -1,0 +1,45 @@
+#radius_1{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+#radius_2{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 50px/25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+#radius_3{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 50px/100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+#radius_4{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 30%/30%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+#radius_5{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 90% 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}

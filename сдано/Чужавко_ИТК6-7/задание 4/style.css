@@ -1,0 +1,22 @@
+button
+{
+    text-align: left;
+    color:white;
+    background-color: blue;
+    border-color: blue;
+    width: 340;
+    height: 50;
+    font-size: medium;
+    font-weight: bolder;
+}
+button:hover
+{
+    text-align: left;
+    color:blue;
+    background-color: white;
+    border-color: blue;
+    width: 340;
+    height: 50;
+    font-size: medium;
+    font-weight: bolder;
+}

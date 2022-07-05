@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <marquee><font size=10 color=blue>АНКЕТА</font></marquee>
+        <hr color="black">
+        <form>
+            <fieldset>
+                <legend>ФИО</legend>
+                <div title="Введите имя и фамилию">
+                    <label>Имя:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="name" size="80"><br><br>
+                    <label>Фамилия:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="surname" size="80"><br><br>
+                </div>
+            </fieldset>
+            <br><br><br>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <label><b>Число:</b></label>
+                <input type="number" min="1" max="31">
+                <label><b>Месяц:</b></label>
+                <select>
+                    <option>Январь
+                    <Option>Февраль
+                    <Option>Март
+                    <Option>Апрель
+                    <option>Май
+                    <option>Июнь
+                    <option>Июль
+                    <option>Август
+                    <option>Сентябрь
+                    <option>Октябрь
+                    <option>Ноябрь
+                    <option>Декабрь
+                </Select>
+                <label><b>Год:</b></label>
+                <input type="number" min="1900" max="2022">
+            </fieldset>
+            <br><br><br>
+            <fieldset>
+                <legend>Пол</legend>
+                <input type="radio" name="sex">
+                <label>Муж</label>
+                <input type="radio" name="sex">
+                <label>Жен</label>
+            </fieldset>
+            <br><br><br>
+            <input type="button" value="Кнопка" onClick='location.href="reg.html"'>
+            <button type="reset">Очистить</button>
+        </form>
+    </form>
+</body>
+</html>

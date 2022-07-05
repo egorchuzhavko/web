@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="indexcss.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>Сайт курьерской доставки</title>
+</head>
+
+<body>
+    <div style="margin-top: 30px; text-align: center;">
+        <h1 style="color: #d25c19;">Авторизация</h1>
+    </div>
+    <div style="margin-top:100px;">
+        <!--Форма авторизации-->
+        <form style="width: 70%; margin:auto; text-align:center;" name="avtorize">
+            <input type="text" placeholder="Ваш номер телефона" size="100" style="background-color:transparent; border-color: #F95C19; backdrop-filter: blur(4px);" name="phone"><br><br>
+            <input type="text" placeholder="Ваш пароль" size="100" style="background-color:transparent; border-color: #F95C19; backdrop-filter: blur(4px);" name="pass"><br><br>
+            <input type="button" value="Войти" class="send" style="font-size: 15px;" onclick="avtorization(avtorize);"><br><br>
+            <input type="button" value="Вернуться" class="send" style="font-size: 15px;" onclick="window.open('index.html','_self',false);">
+        </form>
+    </div>
+    <div>
+        <!--Подвал сайта-->
+        <table style=" background-color: #2f2e41; height:55px; width: 100%; position: absolute; bottom: 0;">
+            <td>
+                <th>
+                    <span class="vpz ">Все права защищены © Чужавко Егор, 2022</span>
+                    <span style="padding-left: 60%; "></span>
+                    <span><a href="https://kbp.by/ " target="_blank " class="kbp ">КБиП</a></span>
+                </th>
+            </td>
+        </table>
+    </div>
+</body>
+
+</html>

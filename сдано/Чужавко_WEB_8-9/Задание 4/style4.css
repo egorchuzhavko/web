@@ -1,0 +1,7 @@
+#input_1::placeholder{
+    color:green;
+}
+#input_2::placeholder{
+    color:white;
+    background-color: green;
+}

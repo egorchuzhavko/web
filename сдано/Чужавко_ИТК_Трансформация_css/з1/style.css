@@ -1,0 +1,32 @@
+div
+{
+	font-family: "Times New Roman", Times, serif;
+	text-align: justify;
+	max-width: 450px;
+	margin-left: 35%;
+}
+p:first-letter 
+{
+	text-indent: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+    color: red;
+}
+.qwe{
+	text-indent: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+    color: red;
+}
+.cb{
+	color: black;
+}
+
+p.cb::first-letter{
+	color: black;
+}
+
+div
+{
+	transform: skewX(10deg);
+}

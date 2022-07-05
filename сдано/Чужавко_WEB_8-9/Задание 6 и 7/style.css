@@ -1,0 +1,25 @@
+body{
+    position: absolute;
+    width: 30%;
+    left:35%;
+    text-align: justify;
+    
+}
+p{
+    counter-reset:heading;
+
+}
+h2{
+    font-weight:normal;
+    font-size: larger;
+}
+h2::after{
+    counter-increment: heading;
+    color: red;
+    content: "Начало: ";
+}
+h2::before{
+    counter-increment: heading;
+    color: green;
+    content: " :конец!";
+}

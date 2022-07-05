@@ -1,0 +1,9 @@
+p::first-letter{
+    font-size: 200%;
+    color: rgb(0, 183, 255);
+    font-style: italic;
+    font-weight: bold;
+}
+h1 p{
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+ol{
+    list-style-type: "Абзац № ";
+    counter-reset:item 0;
+    counter-reset:item2 17;
+}
+
+.ul1_1:hover
+{
+    color: green;
+}
+.ul1_2:hover
+{
+    color: red;
+}

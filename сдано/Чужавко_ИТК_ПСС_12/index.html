@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+        //Пример 1
+        var myBrowser = {
+            name: "Microsoft Internet Explorer",
+            version: "9.0"
+        };
+        alert(myBrowser.name);
+        alert(myBrowser.version);
+        //Пример 2
+        var car = new Object();
+        car.color = "Белый";
+        car.maxSpeed = 220;
+        car.brand = "Nissan";
+        document.write("У машины цвет: " + car.color);
+        var moto = {
+            color: "Синий",
+            horsePower: 130,
+            brand: "Yamaha"
+        };
+        document.write("У мотоцикла производитель: " + moto.brand);
+        //Пример 3
+        var myBrowser = new Object();
+        myBrowser.name = "Microsoft Internet Explorer";
+        myBrowser["version"] = "9.0";
+        for (var a in myBrowser) {
+            alert(a); // Перебирает свойства объекта myBrowser. Выдаст name, version
+            alert(myBrowser[a]); // Выдаст значения свойств
+        }
+        //Пример 4
+        function Student(name, phone) {
+            this.name = name;
+            this.phone = "22-22-22"; // свойство по умолчанию!
+        }
+        var ivanov = new Student("Ivan", "33-33-33");
+        alert(ivanov.name); // выдаст "Ivan"
+        alert(ivanov.phone); // выдаст "22-22-22"
+        ivanov.phone = "33-33-33"; //меняем св-во по умолчанию
+        alert(ivanov.phone); // выдаст "33-33-33"
+        //Пример 5
+        function Car(name, model, color) { /* конструктор объекта car*/
+            this.name = name;
+            this.model = model;
+            this.color = color;
+        }
+        var myCar = new Car;
+        myCar.name = "Мерс";
+        myCar.model = "600";
+        myCar.color = "green";
+        Car.prototype.owner = "Иванов"; /* добавляем новое свойство*/
+        alert(myCar.name + " " + myCar.model + " " + myCar.color + " " + myCar.owner);
+        //Пример 6
+        /* Изменение прототипа */
+        // Добавление свойства по умолчанию к встроенному объекту
+        String.prototype.color = "black";
+        // Добавление (изменение) метода к встроенному объекту
+        String.prototype.write = stringWrite;
+
+        function stringWrite() {
+            document.write('<span style="color:' + this.color + '">');
+            document.write(this.toString());
+            document.write('</span>');
+        }
+        // используем измененный класс
+        var s = new String("Это строка");
+        s.color = "red";
+        s.write();
+        //Дополнение
+        String.prototype.write = printMe;
+
+        function printMe() {
+            document.write('<h' + this.toString() + '>');
+            document.write('Ура!');
+            document.write('</h' + this.toString() + '>');
+        }
+        var s = new String("3");
+        s.write()
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

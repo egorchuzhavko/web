@@ -1,0 +1,18 @@
+.th_weekend{
+    color: grey;
+    align-content: center;
+    width:15%;
+}
+.th_red{
+    color:red;
+    font-weight:bold;
+    width:15%;
+    align-content: center;
+}
+.th_default{
+    width:15%;
+    align-content: center;
+}
+th:hover{
+    color:blue;
+}

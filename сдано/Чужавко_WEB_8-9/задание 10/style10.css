@@ -1,0 +1,28 @@
+ol{
+  list-style-type: "Абзац № ";
+  counter-reset:item;
+}
+
+li::before{
+  content: counter(item)'. ';
+  counter-increment: item;
+}
+li{
+  list-style-position: inside;
+}
+
+.reset{
+	counter-reset: item;
+	font-weight: bold;
+}
+
+.jir{
+  font-weight: bold;
+}
+
+body{
+  position: absolute;
+  width: 23%;
+  left: 35%;
+  text-align: justify;
+}

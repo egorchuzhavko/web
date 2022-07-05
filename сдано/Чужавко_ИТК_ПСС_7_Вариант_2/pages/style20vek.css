@@ -1,0 +1,46 @@
+table{
+    margin:auto;
+    width: 1000px;
+}
+
+.classfirstyear{
+    color:aliceblue;
+    width: 60px;
+}
+
+.classfirststr{
+    color:aliceblue;
+}
+
+.classinfointable{
+    color:rgb(157, 255, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    font-style: italic;
+}
+
+.classyearintable{
+    color:rgb(251, 255, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+body{
+    font-family: cursive;
+    background-image: url(fon.jpg);
+}
+
+TH {
+    background: rgba(43, 44, 44, 0.5);
+    padding: 3px;
+    border: 0px solid black;
+}
+
+TH::selection{
+    background-color: black;
+    color:aliceblue;
+}
+
+th:hover{
+    font-size: x-large;
+}

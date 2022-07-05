@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            html{
+                background-color: rgb(227, 231, 19);
+            }
+            .dropdown {  
+                position: relative;  
+                display: inline-block;  
+            }   
+                .button {  
+                padding: 10px 30px;  
+                font-size: 15px;  
+            }  
+            #list-items {  
+            display: none;  
+            position: absolute;  
+            min-width: 185px;  
+        }  
+        #list-items a {  
+            display: block;  
+            padding: 10px;  
+            text-decoration: none;
+        }  
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        </style>
+        <title>Чужавко</title>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Задание 1</h1>
+            <h4>Кнопка, скрывающая себя</h4>
+            <form name="forma1">
+                <input type="button" class="button" onclick="this.style.display='none';" value="нажать"/>
+                <br><br>
+            </form>
+        </div><br><br>
+        <div align="center">
+            <h1>Задание 2</h1>
+            <h4>Скрытие текста через кнопку при id="hider"</h4>
+            <form name="forma2">
+                <input type="button" class="button" id="hider" value="нажать" onclick="Zadanie2()">
+                <div id="text">ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ</div>
+                <br><br>
+            </form><br><br>
+            <h1>Задание 3</h1>
+            <h4>Прятать и раскрывать группу объектов при нажатии на кнопку</h4>
+            <div class="dropdown">  
+                <button onclick="show_hide()" class="button">нажать</button>  
+                    <div id="list-items">  
+                        <a href="#"> 12345 </a>  
+                        <a href="#"> 12345 </a>  
+                        <a href="#"> 12345 </a>  
+                        <a href="#"> 12345 </a>  
+                        <a href="#"> 12345 </a>  
+                    </div>  
+            </div>              
+        </div>
+    </body>
+</html>

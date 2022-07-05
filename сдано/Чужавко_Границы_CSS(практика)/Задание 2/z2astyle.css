@@ -1,0 +1,31 @@
+table{
+    border-collapse: 15px;
+    border-spacing: 15px;
+}
+
+td{
+    height: 50px;
+    width: 100px;
+}
+.first{
+    border: 10px solid;
+    border-color: red green blue yellow;
+}
+.second{
+    border: 10px solid;
+    border-color: red green blue;
+}
+.third{
+    border: 10px solid;
+    border-color: red green;
+}
+.fourth{
+    border: 10px solid;
+    border-color: red;
+}
+
+body{
+    color:aliceblue;
+    font-size: x-large;
+    background-color: darkslategray;
+}

@@ -1,0 +1,34 @@
+.circle{
+    animation-name: jumps;
+    position: absolute;
+    border: 1px black solid;
+    background-color: greenyellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    left: 20px;
+    top: 50px;
+}
+@keyframes jumps{
+    0%{left:20px;top:50px;animation-timing-function: ease-in;}
+    10%{left:50px;top:450px;animation-timing-function: ease-out;}
+    25%{left:85px;top:50px;animation-timing-function: ease-in;}
+    35%{left:155px;top:450px;animation-timing-function: ease-out;}
+    50%{left:215px;top:120px;animation-timing-function: ease-in;}
+    60%{left:260px;top:470px;animation-timing-function: ease-out;}
+    75%{left:300px;top:230px;animation-timing-function: ease-in;}    
+    85%{left:340px;top:470px;animation-timing-function: ease-out;}    
+    100%{left:450px;top:470px;animation-timing-function: ease-out;}
+}
+
+.backgr{
+    position: absolute;
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    z-index: 0;
+}

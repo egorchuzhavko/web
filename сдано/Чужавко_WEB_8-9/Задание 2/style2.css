@@ -1,0 +1,8 @@
+p::first-line{
+    color: red;
+    font-style: italic
+}
+
+body{
+    font-size: xx-large;
+}

@@ -1,0 +1,170 @@
+a.podch {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a.podch:hover {
+    background-size: 100% 2px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li::before {
+    content: "✔";
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(imgs/bg.png);
+    background-color: #FFEFD5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a.vizvkur {
+    border: 1px solid #F95C19;
+    border-radius: 10px;
+    background-color: #F95C19;
+    transition: 0.2s linear;
+    color: white;
+    text-align: left;
+}
+
+a.vizvkur:hover {
+    background-color: #d25c19;
+    border-color: #d25c19;
+}
+
+.headname {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 75px;
+    margin-left: 250px;
+}
+
+.slogan {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: 100px;
+    font-style: italic;
+}
+
+.AboutUsStart {
+    margin-top: 350px;
+    margin-left: 250px;
+    font-size: x-large;
+}
+
+.AboutInfo {
+    font-size: large;
+    margin-left: 250px;
+    margin-top: 25px;
+    width: 70%;
+}
+
+.uslg {
+    margin-top: 150px;
+    margin-left: 250px;
+}
+
+.features {
+    font-size: 120px;
+    text-align: center;
+}
+
+.tdstylefeatures {
+    width: 30%;
+    background-color: white;
+    border: 2px solid #d25c19;
+    border-radius: 40px;
+}
+
+.vpz {
+    color: white;
+    transition: .2s linear;
+}
+
+.vpz:hover {
+    color: rgb(165, 165, 165);
+}
+
+.cu {
+    margin-top: 150px;
+}
+
+.zmdi:hover {
+    font-size: 140px;
+}
+
+.tarifs {
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid #d25c19;
+    border-radius: 25px;
+}
+
+tr.tars:hover {
+    font-size: 30px;
+}
+
+.send {
+    background-color: #F95C19;
+    border-color: #F95C19;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    transition: 0.6s linear;
+}
+
+.send:hover {
+    background-color: #d25c19;
+    border-color: #d25c19;
+}
+
+.kbp {
+    color: #F95C19;
+    transition: 0.6s linear;
+}
+
+.kbp:hover {
+    color: #d25c19;
+}
+
+.form-popup {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    right: 180px;
+    width: 300px;
+    height: 108px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #d25c19;
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 4px;
+}
+
+textarea {
+    border-radius: 4px;
+}

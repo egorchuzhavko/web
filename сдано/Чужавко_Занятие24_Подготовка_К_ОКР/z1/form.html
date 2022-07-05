@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        button{
+            transition: 0.6s linear; 
+        }
+        button:hover{
+            border: 1px powderblue solid;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .menu-categories {
+            background-color: powderblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 40px;
+            color: white;
+        }
+        ul{
+            margin: 1px;
+            padding: 5px;
+        }
+        li {
+        
+            margin: 1em;
+            padding: 1em;
+            list-style: none;
+        }
+        li:hover{
+            color:black;
+            background: white;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1 style="color: powderblue; margin-top: 10px; margin-bottom: 10px;text-shadow: 1px 1px 1px #000; text-align: center;">Форма регистрации</h1>
+    <div align="center">
+        <ul class="menu-categories">
+                <a href="first.html"><span><li>Главная</li></span></a>
+                <a href="news.html"><span><li>Новости</li></span></a>
+                <a href="#"><span><li>Регистрация</li></span></a>
+        </ul>
+    </div>
+    <br><br>
+    <form action="first.html">
+        <table align="center">
+                <tr>
+                    <th align="right"  style="background-color: white; color:black;">
+                        <label>Имя:</label>
+                        <input type="text" id="name" name="user_name">
+                    </th>
+                    <th style="background-color: white; color:black;">
+                        
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                        <label>e-mail:</label>
+                        <input type="text" id="e-mail" name="e-mail">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                        <label>Пароль:</label>
+                        <input type="text" id="pass" name="pass">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                    <label>Повторите пароль:</label>
+                    <input type="text" id="duppass" name="duppass">
+                </th>
+                </tr>
+                <tr align="center" style="background-color: white; color:black;">
+                    <th style="background-color: white; color:black;">
+                        <label for="mail">Пол:</label>
+                        <input type="radio" name="size" id="male" value="medium">
+                        <label for="browser">мужской</label>
+                        <input type="radio" name="size" id="female" value="medium">
+                        <label for="browser">женский</label>
+                    </th>
+                </tr>
+                <tr align="center" style="background-color: white; color:black;">
+                    <th style="background-color: white; color:black;">
+                        <label for="hobbies">Увлечения</label>
+                    </th>
+                    <th style="background-color: white; color:black;">
+
+                    </th>
+                </tr>
+                <tr align="right" style="background-color: white; color:black;">
+                    <th style="background-color: white; color:black;">
+                        <SELECT>
+                            <OPTION>Компьютеры
+                            <OPTION>Спорт
+                            <OPTION>Игры
+                            <OPTION>Животные
+                            <OPTION>Книги
+                        </SELECT>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="background-color: white; color:black;">
+                        <br><label for="comment">Ваши пожелания</label>
+                        <textarea name="comment" id="1"></textarea><br>
+                    </th>
+                    <th style="background-color: white; color:black;">
+
+                    </th>
+                </tr>
+                <tr>
+                    <th style="background-color: white; color:black;">
+                        <label for="accept"><br>С уловиями регистрации <br>ознакомлен</label>
+                        <input type="checkbox">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" style="background-color: white; color:black;">
+                        <button><font color=black>Отправить</font></a></button>
+                        <button type="reset">Очистить</button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>

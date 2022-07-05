@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="functions.js"></script>
+    <style>
+        td{
+            width: 33%;
+            text-align: center;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <title>If Switch</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <form name="z1">
+                        <h2>Задание 1 - расчёт <br>y=sqrt(7-x)</h2><br>
+                        <label>Введите Х:</label><br><br>
+                        <input type="text" name="x" size="16"><br><br>
+                        <input type="button" value="Вычислить" onClick="Z1(z1);"><br><br>
+                        <input type="text" name="result" size="30">
+                    </form>
+                </td>
+                <td>
+                    <form name="z2">
+                        <h2>Задание 2 - узнать магазин, с самой дешёвой ценой</h2><br>
+                        <label>Введите цену в первом магазине:</label>
+                        <input type="text" name="a" size="16"><br><br>
+                        <label>Введите цену во втором магазине:</label>
+                        <input type="text" name="b" size="16"><br><br>
+                        <label>Введите цену в третьем магазине:</label>
+                        <input type="text" name="c" size="16"><br><br><br>
+                        <input type="button" value="Узнать" onClick="Z2(z2);"><br><br>
+                        <input type="text" name="result" size="50">
+                    </form>
+                </td>
+                <td>
+                    <form name="z3">
+                        <h2>Задание 3 - 31 декабря 2005 года было в субботу. Вводится любая дата декабря месяца 2005 года. Определить на какой день недели эта дата приходится. (Использовать оператор Switch).</h2>
+                        <label>Введите номер дня декабря 2005 года</label><br><br>
+                        <input type="text" name="day" size="16"><br><br>
+                        <input type="button" value="Узнать день" onClick="Z3(z3);"><br><br>
+                        <input type="text" name="result" size="16"><br><br>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

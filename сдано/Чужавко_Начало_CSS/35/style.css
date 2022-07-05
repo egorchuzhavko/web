@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color:red;
+}
+h2{
+    color:green;
+}
+h3{
+    color:red;
+    font-size: 20px;
+}
+p {
+    color:blue;
+    font-style: italic;
+    font-size:20px
+}
+OL{
+    color:red;
+}
+UL{
+    color:darksalmon;
+}

@@ -1,0 +1,11 @@
+body{
+    background-image: url(grid_noise.png);
+}
+
+.firstletter{
+    font-size:x-large;
+    color:red;
+}
+.otherletters{
+    color:blue;
+}

@@ -1,0 +1,27 @@
+#background{
+    background-color: rgb(14, 189, 52);
+}
+#align{
+    text-align: justify;
+}
+#Big_simbol{
+    color: blue;
+    font-size:xx-large;
+}
+p{
+    text-indent: 50px;
+    margin: 30px;
+    font-family: sans-serif;
+}
+::selection{
+    background: yellow;
+}
+div::before{
+    content: "Задание№1";
+    text-indent: 55px;
+    margin: 25px;
+    position: absolute;
+    top: 0px;
+    font-size:large;
+    font-weight: bold;
+}

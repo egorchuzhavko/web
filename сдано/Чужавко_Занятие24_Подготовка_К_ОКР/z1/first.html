@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        .menu-categories {
+            background-color: powderblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 40px;
+            color: white;
+        }
+        ul{
+            margin: 1px;
+            padding: 5px;
+        }
+        li {
+        
+            margin: 1em;
+            padding: 1em;
+            list-style: none;
+        }
+        li:hover{
+            color:black;
+            background: white;
+        }
+
+        .firstpic{
+            position: absolute;
+            width: 200px;
+            height: 600px;
+            left: 40px;
+            top: 25%;
+            background: url(sobaka.jpg);
+        }
+        .secondpic{
+            position: absolute;
+            width: 200px;
+            height: 600px;
+            right: 40px;
+            top: 25%;
+            background: url(sobaka.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: powderblue; margin-top: 10px; margin-bottom: 10px;text-shadow: 1px 1px 1px #000; text-align: center;">Главная</h1>
+    <div align="center">
+        <ul class="menu-categories">
+            <a href="#"><span><li>Главная</li></span></a>
+            <a href="news.html"><span><li>Новости</li></span></a>
+            <a href="form.html"><span><li>Регистрация</li></span></a>
+    </ul>
+    <img src="sobaka.jpg" class="firstpic">
+    <img src="sobaka.jpg" class="secondpic">
+</body>
+</html>

@@ -1,0 +1,16 @@
+li{
+    display: inline-block;
+}
+
+button{
+    border: 2px solid blue;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height: 30px;
+    color: blue;
+}
+
+button:hover{
+    background-color: rgb(61, 60, 60);
+    color:white;
+}

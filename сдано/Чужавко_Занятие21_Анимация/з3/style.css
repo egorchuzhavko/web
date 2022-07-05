@@ -1,0 +1,90 @@
+.d1 {
+    top: 82px;
+    left: 500px;
+    bottom: 0; right: 0;
+    position: absolute;
+    width: 60px; 
+    height: 60px;
+    background: #83A7C9;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }
+    .d2 {
+        position: absolute;
+        width: 60px; 
+        height: 60px;
+        background: #83A7C9;
+        border-radius: 50%;
+        animation-name: example2;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        }
+    .d3{
+        position: absolute;
+
+        width: 60px; 
+        height: 60px;
+        background: #83A7C9;
+        border-radius: 50%;
+        animation-name: example3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+    .d4{
+        position: absolute;
+        width: 60px; 
+        height: 60px;
+        background: #83A7C9;
+        border-radius: 50%;
+        animation-name: example4;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+
+
+@keyframes example{
+0%{background-color:Lime;left:300px;top:100px;}
+12.5%{background-color:red;left:500px;top:100px;}
+25%{background-color:yellow;left:500px;top:300px;}
+37.5%{background-color:green;left:500px;top:500px;}
+50%{background-color:blue;left:300px;top:500px;}
+62.5%{background-color:blue;left:100px;top:500px;}
+75%{background-color:yellow;left:100px;top:300px;}
+87.5%{background-color:red;left:100px;top:100px;}
+100%{background-color:red;left:300px;top:100px;}
+}
+@keyframes example2{
+    0%{background-color:lime;left:500px;top:300px;}
+    12.5%{background-color:red;left:500px;top:500px;}
+    25%{background-color:yellow;left:300px;top:500px;}
+    37.5%{background-color:green;left:100px;top:500px;}
+    50%{background-color:blue;left:100px;top:300px;}
+    62.5%{background-color:blue;left:100px;top:100px;}
+    75%{background-color:yellow;left:300px;top:100px;}
+    87.5%{background-color:red;left:500px;top:100px;}
+    100%{background-color:red;left:500px;top:300px;}
+}
+@keyframes example3{
+    0%{background-color:lime;left:300px;top:500px;}
+    12.5%{background-color:red;left:100px;top:500px;}
+    25%{background-color:yellow;left:100px;top:300px;}
+    37.5%{background-color:green;left:100px;top:100px;}
+    50%{background-color:blue;left:300px;top:100px;}
+    62.5%{background-color:blue;left:500px;top:100px;}
+    75%{background-color:yellow;left:500px;top:300px;}
+    87.5%{background-color:red;left:500px;top:500px;}
+    100%{background-color:red;left:300px;top:500px;}
+}
+@keyframes example4{
+    0%{background-color:lime;left:100px;top:300px;}
+    12.5%{background-color:red;left:100px;top:100px;}
+    25%{background-color:yellow;left:300px;top:100px;}
+    37.5%{background-color:green;left:500px;top:100px;}
+    50%{background-color:blue;left: 500px;top:300px;}
+    62.5%{background-color:blue;left:500px;top:500px;}
+    75%{background-color:yellow;left:300px;top:500px;}
+    87.5%{background-color:red;left:100px;top:500px;}
+    100%{background-color:red;left:100px;top:300px;}
+}           

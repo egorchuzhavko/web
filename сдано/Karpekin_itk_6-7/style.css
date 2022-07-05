@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: linear-gradient(#4322FF, #48C6EF) fixed;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 400;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav span{
+    color: #f2f2f2;
+    position: fixed;  
+    margin-left:70%;
+    margin-top: 0.9%;
+    font-size: 1.2em;
+    z-index: 400   ;
+}
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+
+.active {
+    border-bottom: 3px solid red;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+.first{
+    height: 100%;
+    background: rgb(219, 219, 219);
+}
+
+
+.first .zadone{
+    background:rgb(185, 185, 185);
+    border:5px dotted rgb(83, 83, 83);
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin: 20% 40%;
+    padding-left: 30px;
+    color:blue;
+    transition: transform .7s;
+}
+
+.first .zadone:hover{
+    transform: scale(1.3);
+}
+
+.second .zad2{
+    background:rgb(185, 185, 185);
+    border:5px dotted rgb(83, 83, 83);
+    width: 300px;
+    height: 210px;
+    position: absolute;
+    margin: 15% 40%;
+    padding-left: 6px;
+    transition: transform .7s;
+}
+.second{
+    height: 100%;
+}
+.second .zad2 .btn2{
+    background: rgb(255, 255, 255);
+    padding: 6px 6px;
+    margin: 6px 6px;
+    width: 100px;
+    border: 2px solid blue;
+    color:blue;
+    cursor: pointer;
+    user-select: none;
+}
+
+.second .zad2:hover{
+    transform: scale(1.2);
+}
+.second .zad2 .btn2:active{
+    filter: brightness(80%);
+}
+.thread{
+    height: 100%;
+    background: #000;
+}
+.thread .zad3{
+    background:rgb(185, 185, 185);
+    border:5px dotted rgb(83, 83, 83);
+    width: 300px;
+    height: 210px;
+    position: absolute;
+    margin: 15% 40%;
+    padding-left: 6px;
+    transition: transform .7s;
+}
+.thread{
+    height: 100%;
+    background: rgb(219, 219, 219);
+}
+.thread .zad3 .btn3{
+    background: rgb(34, 34, 34);
+    padding: 6px 6px;
+    margin: 6px 6px;
+    width: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    color:rgb(247, 247, 247);
+    cursor: pointer;
+    user-select: none;
+}
+
+.thread .zad3:hover{
+    transform: scale(1.2);
+}
+
+.thread .zad3 .btn3:hover{
+    background:rgb(83, 83, 83);
+}
+.thread .zad3 .btn3:active{
+    color:black;
+    background:white;
+}
+
+.foure{
+    height: 100%;
+}
+.foure .zad4{
+    background:rgb(185, 185, 185);
+    border:5px dotted rgb(83, 83, 83);
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    margin: 15% 40%;
+    padding-left: 6px;
+    transition: transform .7s;
+}
+.foure .zad4 .btn4{
+    color:white;
+    background:blue;
+    border:2px solid blue;
+    width: 160px;
+    padding: 6px 6px;
+    margin: 6px 6px;
+}
+
+.foure .zad4 .btn4 p{
+    color:blue;
+    text-align: right;
+    margin: 0;
+    float:inline-end;
+    margin-top: -15px;
+}
+
+.foure .zad4 .btn4:hover{
+    background: white;
+    color:blue;
+}
